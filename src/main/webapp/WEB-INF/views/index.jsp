@@ -6,7 +6,10 @@
     <hr>
     <h1>${msg}</h1>
     <h2>Today is <fmt:formatDate value="${today}" pattern="yyyy-MM-dd" /></h2>
-    <h3>Version: 1.0</h3>
+    <h3>Version: 2.0</h3>
 
 </body>
 </html>
+- name: stop current running container
+command: docker stop my_cicd_project
+ignore_errors: yes
